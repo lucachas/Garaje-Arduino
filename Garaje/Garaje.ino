@@ -90,19 +90,9 @@ void loop() {
   }
 
 
-
-
   //-------------------------------ASCENSORES------------------------
   if (digitalRead(pinBotonAscensorEntradaAbajo) == HIGH) {
       Serial.println("Botón ascensor entrada accionado");
-
-
-
-
-
-
-
-
     if (ascensorEntrada == 0){
       while (digitalRead(pinBotonAscensorEntradaAbajo) == HIGH) {}
       Serial.println("Botón ascensor entrada accionado");
@@ -152,4 +142,3 @@ void loop() {
       }
   }
 }
-
